@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HGS明朝E", serif;
+  background-color: #fff;
+  color: #111;
+  line-height: 2;
+  font-size: 15px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 660px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 32px;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 0.2em;
+  margin-bottom: 48px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #111;
+}
+
+.intro {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 48px;
+  line-height: 2.2;
+}
+
+.section {
+  margin-bottom: 48px;
+}
+
+.section-title {
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0.15em;
+  margin-bottom: 16px;
+  color: #666;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+}
+
+.checklist li {
+  font-size: 14px;
+  line-height: 2.2;
+  padding-left: 1.6em;
+  text-indent: -1.6em;
+  color: #111;
+}
+
+.checklist li::before {
+  content: "□ ";
+}
+
+.costume-link-wrap {
+  margin-top: 64px;
+  padding-top: 32px;
+  border-top: 1px solid #ddd;
+}
+
+.costume-link {
+  display: inline-block;
+  font-size: 14px;
+  color: #111;
+  text-decoration: none;
+  letter-spacing: 0.12em;
+  border-bottom: 1px solid #111;
+  padding-bottom: 2px;
+  transition: opacity 0.2s;
+}
+
+.costume-link:hover {
+  opacity: 0.5;
+}
+
+/* 衣装ページ */
+.back-link {
+  display: inline-block;
+  font-size: 13px;
+  color: #666;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  margin-bottom: 48px;
+  transition: opacity 0.2s;
+}
+
+.back-link:hover {
+  opacity: 0.5;
+}
+
+.costume-item {
+  margin-bottom: 80px;
+  padding-bottom: 64px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.costume-item:last-child {
+  border-bottom: none;
+}
+
+.costume-number {
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  color: #888;
+  margin-bottom: 24px;
+}
+
+.costume-images {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.costume-images img {
+  width: calc(50% - 6px);
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 480px;
+}
+
+.costume-images.single img {
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+}
+
+.size-table {
+  font-size: 13px;
+  color: #444;
+  margin-bottom: 16px;
+  line-height: 2;
+}
+
+.size-label {
+  display: block;
+  font-size: 12px;
+  color: #888;
+  letter-spacing: 0.1em;
+  margin-bottom: 4px;
+}
+
+.size-value {
+  display: block;
+  font-size: 13px;
+  color: #111;
+  letter-spacing: 0.05em;
+}
+
+.costume-desc {
+  font-size: 13px;
+  color: #444;
+  line-height: 2;
+  margin-top: 16px;
+}
+
+.costume-desc .note {
+  color: #888;
+  font-size: 12px;
+}
